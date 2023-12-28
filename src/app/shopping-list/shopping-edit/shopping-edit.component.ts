@@ -7,8 +7,8 @@ import { Ingrediant } from '../../shared/ingrediant.model';
   styleUrls: ['./shopping-edit.component.css']
 })
 export class ShoppingEditComponent {
-  @ViewChild('nameInput', { static: false }) nameInputRef: ElementRef
-  @ViewChild('amountInput', { static: false }) amountInputRef: ElementRef
+  @ViewChild('nameInput', { static: true }) nameInputRef: ElementRef
+  @ViewChild('amountInput', { static: true }) amountInputRef: ElementRef
   @Output() ingredientAdded = new EventEmitter<Ingrediant>();
 
   onAddItem() {
